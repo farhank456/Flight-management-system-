@@ -25,7 +25,7 @@ public class PNRCheckServlet extends HttpServlet {
             return;
         }
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/User_Login", "root", "Sohail0622")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/User_Login", "root", "9324070450")) {
             String query = "SELECT * FROM passenger_details2 WHERE pnr = ?";
             PreparedStatement pstmt = conn.prepareStatement(query);
             pstmt.setString(1, pnr);
