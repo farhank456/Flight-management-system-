@@ -34,7 +34,7 @@ public class FlightBookingServlet extends HttpServlet {
         // Database connection details
         String jdbcUrl = "jdbc:mysql://localhost:3306/User_Login";
         String dbUser = "root";
-        String dbPassword = "Sohail0622";
+        String dbPassword = "9324070450";
 
         try (Connection conn = DriverManager.getConnection(jdbcUrl, dbUser, dbPassword)) {
             String sql = "SELECT flight_number, airline, departure_time, eco_price, bus_price " +
