@@ -26,7 +26,7 @@ public class CancelTicketServlet extends HttpServlet {
                 // Database connection details
                 String dbURL = "jdbc:mysql://localhost:3306/User_Login";
                 String dbUser = "root";
-                String dbPassword = "Sohail0622";
+                String dbPassword = "9324070450";
 
                 try (Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPassword); PreparedStatement stmt = conn.prepareStatement("SELECT * FROM passenger_details2 WHERE pnr = ?")) {
 
