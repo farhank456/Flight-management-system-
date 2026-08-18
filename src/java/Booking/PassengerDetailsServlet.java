@@ -37,7 +37,7 @@ public class PassengerDetailsServlet extends HttpServlet {
 
             // Database connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/User_Login", "root", "Sohail0622");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/User_Login", "root", "9324070450");
 
             // Corrected insert query
             String query = "INSERT INTO passenger_details (flight_number, airline, travel_date, from_location, to_location, passenger_count, name, email, aadhar, dob, gender, mobile) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
