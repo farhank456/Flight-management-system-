@@ -38,7 +38,7 @@ public class StorePassengerDetailsServlet extends HttpServlet {
         String pnrStr = pnr != null ? String.valueOf(pnr) : "N/A"; // Ensure PNR is stored as String
 
         // Database connection and insertion logic
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/User_Login", "root", "Sohail0622")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/User_Login", "root", "9324070450")) {
 
             // Insert passenger details into the database
             String query = "INSERT INTO passenger_details2 (pnr, name, email, flight_number, airline, travel_date, from_location, to_location, passenger_count, aadhar, dob, gender, mobile) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
